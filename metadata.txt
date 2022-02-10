@@ -1,13 +1,13 @@
 ---
 title:
 - type: main
-  text: Pay Off
+  text: title goes here
 creator:
 - role: author
-  text: Dan Ariely
-description: The Hidden Logic that Shapes our Motivation
+  text: Authors Name
+description: Description goes here
 rights: Commercial
-language: en-US
+language: en-GB
 stylesheet: epub.css
 cover-image: cover.jpg
 ...
