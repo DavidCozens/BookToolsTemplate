@@ -13,4 +13,12 @@ pipeline {
       }
     }
   }
+  post {
+    sucess {
+      archiveArtifacts artifacts: '*.epub', followSymlinks: false
+    }
+    always {
+      cleanWs()
+    }
+  }
 }
