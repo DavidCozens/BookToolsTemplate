@@ -17,7 +17,7 @@ pipeline {
     success {
       archiveArtifacts artifacts: '*.epub', followSymlinks: false
     }
-    always {
+    cleanup {
       cleanWs()
     }
   }
