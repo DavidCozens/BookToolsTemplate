@@ -12,10 +12,10 @@ pipeline {
         sh 'pandoc  --toc --epub-embed-font=\'fonts/*.ttf\' -o book.epub metadata.txt contents.md'
       }
     }
-    post {
-      always {
-        cleanWs()
-      }
+  }
+  post {
+    always {
+      cleanWs()
     }
   }
 }
