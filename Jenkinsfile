@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'pandoc/core'
-      args '-it --entrypoint=/bin/sh'
+      args '--entrypoint=\'\''
       registryCredentialsId 'dockerhub'
     }
   }
