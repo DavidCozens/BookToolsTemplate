@@ -14,7 +14,7 @@ pipeline {
     }
   }
   post {
-    sucess {
+    success {
       archiveArtifacts artifacts: '*.epub', followSymlinks: false
     }
     always {
