@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('epub') {
       steps{
-        sh 'pandoc  --toc --epub-embed-font=\'fonts/*.ttf\' -o book.epub metadata.txt contents.md'
+        sh 'pandoc  --toc -o book.epub metadata.txt contents.md'
       }
     }
   }
