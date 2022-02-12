@@ -45,7 +45,7 @@ A normal paragraph
 1. first item
 1. second item
 1. third item
- 1. indented 
+   1. indented
 1. fourth item
 
 ## Unordered
@@ -56,7 +56,7 @@ A normal paragraph
   indented paragraph inside the list
 
 - third item
- - indented item
+  - indented item
 - fourth item
 
 # Code Blocks
@@ -66,7 +66,6 @@ a code block can be done by indenting 4 spaces
     <html>
       <head>
         <title>Test</title>
-    
       </head>
 
 # Images
@@ -147,7 +146,7 @@ int main()
 
 ## Footnotes
 
-This paragraph has a footnote [^1], and another[^fn], and a big one [^big].
+This paragraph has a footnote [^1], and another[^fn], and a big one [^big]. Inline footnotes^[can be written as part of the text]
 
 Then place the footnotes where you want them
 
@@ -157,7 +156,7 @@ Then place the footnotes where you want them
 
 [^big]: Footnotes can span multiple lines
 
-  Indent paragraphas that form part of the footnote
+    Indent paragraphs that form part of the footnote
 
 ## Heading IDs {#SpecialHeadingId}
 
@@ -178,8 +177,8 @@ Second Term
 
 ## Check List
 
--[x] A checked item
--[ ] Unchecked
+- [x] A checked item
+- [ ] Unchecked
 
 ## Strike Through
 
@@ -205,12 +204,6 @@ Use ^ for superscript X^2^, or X<sup>2<sup>
 ## Underline
 
 We have to resort to HTML to <ins>underline</ins> words.
-
-## Centered
-
-AQgain we have to use HTML, and the tag is deprecated
-
-<centre>Is the centred?</centre>
 
 ## Comments
 
