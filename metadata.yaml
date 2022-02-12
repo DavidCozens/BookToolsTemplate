@@ -1,0 +1,15 @@
+---
+title:
+- type: main
+  text: title goes here
+- type: subtitle
+  text: subtitle here
+creator:
+- role: author
+  text: Authors Name
+description: Description goes here
+rights: © 2022 Authors Name,
+language: en-GB
+stylesheet: epub.css
+cover-image: cover.jpg
+...
