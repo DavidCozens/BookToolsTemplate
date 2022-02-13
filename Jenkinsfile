@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('epub') {
       steps{
-        sh 'pandoc  --from markdown+emoji --toc -o book.epub metadata.yaml contents.md'
+        sh 'make -r epub'
       }
     }
   }
