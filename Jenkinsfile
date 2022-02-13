@@ -1,8 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'pandoc/core'
-      args '--entrypoint=\'\''
+      image 'davidcozens/booktools:1'
       registryCredentialsId 'dockerhub'
     }
   }
