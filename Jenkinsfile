@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'davidcozens/booktools:1'
+      image 'davidcozens/booktools:2'
       registryCredentialsId 'dockerhub'
     }
   }
