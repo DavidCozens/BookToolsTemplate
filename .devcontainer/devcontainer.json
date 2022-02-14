@@ -1,7 +1,8 @@
 {
 	"name": "booktools",
 	"context": "..",
-	"image": "davidcozens/booktools:2",
+	"image": "davidcozens/booktools:4",
+	"postCreateCommand": "apk --update add git",
 	"extensions": [
 	"DavidAnson.vscode-markdownlint",
 	"ms-vscode.makefile-tools"
