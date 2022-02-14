@@ -1,8 +1,8 @@
 {
 	"name": "booktools",
 	"context": "..",
-	"image": "davidcozens/booktools:4",
-	"postCreateCommand": "apk --update add git",
+	"image": "davidcozens/booktools:5",
+	"postStartCommand": "git config --global core.sshCommand /usr/bin/ssh",
 	"extensions": [
 	"DavidAnson.vscode-markdownlint",
 	"ms-vscode.makefile-tools"
