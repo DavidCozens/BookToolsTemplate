@@ -1,10 +1,10 @@
 {
 	"name": "booktools",
-	"context": "..",
 	"image": "davidcozens/booktools:5",
-	"postStartCommand": "git config --global core.sshCommand /usr/bin/ssh",
 	"extensions": [
-	"DavidAnson.vscode-markdownlint",
-	"ms-vscode.makefile-tools"
-	]
-}
+		"DavidAnson.vscode-markdownlint",
+		"ms-vscode.makefile-tools"
+		],
+	"postStartCommand": "git config --global core.sshCommand /usr/bin/ssh"
+ }
+
