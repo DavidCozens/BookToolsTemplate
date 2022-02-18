@@ -14,7 +14,7 @@ pipeline {
   }
   post {
     success {
-      archiveArtifacts artifacts: '*.epub', followSymlinks: false
+      archiveArtifacts artifacts: '*.epub,*.pdf', followSymlinks: false
     }
     cleanup {
       cleanWs()
