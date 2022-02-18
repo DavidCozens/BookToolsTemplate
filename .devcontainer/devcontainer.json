@@ -1,6 +1,6 @@
 {
 	"name": "booktools",
-	"image": "davidcozens/booktools:5",
+	"image": "davidcozens/booktools:7",
 	"extensions": [
 		"DavidAnson.vscode-markdownlint",
 		"ms-vscode.makefile-tools"
