@@ -6,7 +6,7 @@ Then place the footnotes where you want them
 
 [^1]: First footnote
 
-[^fn]: Any text can be used as the footonote id
+[^fn]: Any text can be used as the footnote id
 
 [^big]: Footnotes can span multiple lines
 

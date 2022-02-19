@@ -6,7 +6,7 @@ pipeline {
     }
   }
   stages {
-    stage('epub') {
+    stage('build') {
       steps{
         sh 'make -j'
       }

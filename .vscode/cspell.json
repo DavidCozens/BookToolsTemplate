@@ -1,0 +1,16 @@
+{
+    "version": "0.2",
+    "language": "en-GB",
+    "words": [
+        "booktools",
+        "davidcozens",
+        "EPUB",
+        "Jenkinsfile",
+        "Pandoc"
+    ],
+    "ignoreWords": [
+        "smallcaps",
+        "stylesheet",
+        "testimage"
+    ]
+}

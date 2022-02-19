@@ -8,4 +8,4 @@ A normal paragraph
 >
 >> with nested quotes
 >
-> - and nested items *Some formating works inside blockquotes*
+> - and nested items *Some formatting works inside blockquotes*
