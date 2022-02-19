@@ -10,7 +10,7 @@ EPUB_FLAGS = $(COMMON_FLAGS)
 EPUB_METADATA = epubmetadata.yaml
 EPUB_TARGET = $(BOOKNAME).epub
 
-PDF_FLAGS = $(COMMON_FLAGS) --pdf-engine=xelatex --top-level-division=chapter -V papersize:a5 -V geometry:"top=2cm, bottom=1.5cm, left=2cm, right=2cm"
+PDF_FLAGS = $(COMMON_FLAGS) --pdf-engine=xelatex --top-level-division=chapter -V geometry:"paperwidth=7.5in, paperheight=9.25in, top=0.75in, bottom=0.75in, inner=1.25in, outer=0.75in, twoside"
 PDF_TARGET = $(BOOKNAME).pdf
 
 PANDOC = pandoc

@@ -11,13 +11,13 @@ On the assumption that I may end up self publishing this toolchain targets gener
 ## ToDo
 
 * PDF front matter needs to be investigated. Some is present but its a mess
-* PDF Specified proper page size and margins
-* PDF KDF request embedded fonts, select fonts and embed
+* PDF KDF request embedded fonts, select fonts and embed - use dejavu
 * Separate epub and ebook for kindle build targets
 * Decide on how to link to source code and embed it.
 * Add markdown Lint to the build process
 * Resize images for epub as they do not require the same resolution as printed books
 * document how to adapt styling (once I know how)
+* Generate error if there are files in the content that are not specified in the order
 
 ## Bugs
 
