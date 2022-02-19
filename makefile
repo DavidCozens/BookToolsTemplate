@@ -1,15 +1,17 @@
+BOOKNAME = book
 CONTENT_DIR = BookContent
 CHAPTER_ORDER = ChapterOrder.txt
 CHAPTERS = $(patsubst %,$(CONTENT_DIR)/%,$(strip $(file < $(CHAPTER_ORDER))))
-METADATA = metadata.yaml
+COMMON_METADATA = metadata.yaml
 
 COMMON_FLAGS = --from markdown --toc -N --resource-path=$(CONTENT_DIR)
 
-EPUBFLAGS = $(COMMON_FLAGS)
-EPUBTARGET = book.epub
+EPUB_FLAGS = $(COMMON_FLAGS)
+EPUB_METADATA = epubmetadata.yaml
+EPUB_TARGET = $(BOOKNAME).epub
 
-PDFFLAGS = $(COMMON_FLAGS) --pdf-engine=xelatex --top-level-division=chapter -V papersize:a5 -V geometry:"top=2cm, bottom=1.5cm, left=2cm, right=2cm"
-PDFTARGET = book.pdf
+PDF_FLAGS = $(COMMON_FLAGS) --pdf-engine=xelatex --top-level-division=chapter -V papersize:a5 -V geometry:"top=2cm, bottom=1.5cm, left=2cm, right=2cm"
+PDF_TARGET = $(BOOKNAME).pdf
 
 PANDOC = pandoc
 
@@ -17,16 +19,16 @@ PANDOC = pandoc
 
 all: epub pdf
 
-epub: $(EPUBTARGET) 
+epub: $(EPUB_TARGET) 
 
-$(EPUBTARGET): $(METADATA) $(CHAPTER_ORDER) $(CHAPTERS) $(MAKEFILE_LIST)
-	$(PANDOC)  $(EPUBFLAGS) -o $@ $(METADATA) $(CHAPTERS)
+$(EPUB_TARGET): $(COMMON_METADATA) $(EPUB_METADATA) $(CHAPTER_ORDER) $(CHAPTERS) $(MAKEFILE_LIST)
+	$(PANDOC)  $(EPUB_FLAGS) -o $@ $(COMMON_METADATA) $(EPUB_METADATA) $(CHAPTERS)
 
-pdf: $(PDFTARGET)
+pdf: $(PDF_TARGET)
 
-$(PDFTARGET): $(METADATA) $(CHAPTER_ORDER) $(CHAPTERS) $(MAKEFILE_LIST)
-	$(PANDOC)  $(PDFFLAGS) -o $@ $(METADATA) $(CHAPTERS)
+$(PDF_TARGET): $(COMMON_METADATA) $(CHAPTER_ORDER) $(CHAPTERS) $(MAKEFILE_LIST)
+	$(PANDOC)  $(PDF_FLAGS) -o $@ $(COMMON_METADATA) $(CHAPTERS)
 
 clean:
-	$(RM) $(EPUBTARGET)
-	$(RM) $(PDFTARGET)
+	$(RM) $(EPUB_TARGET)
+	$(RM) $(PDF_TARGET)

@@ -1,11 +1,12 @@
 {
 	"name": "booktools",
-	"image": "davidcozens/booktools:7",
+	"image": "davidcozens/booktools:8",
 	"extensions": [
 		"DavidAnson.vscode-markdownlint",
 		"ms-vscode.makefile-tools",
 		"streetsidesoftware.code-spell-checker",
-		"shd101wyy.markdown-preview-enhanced"
+		"shd101wyy.markdown-preview-enhanced",
+		"tomoki1207.pdf"
 		],
 	"postStartCommand": "git config --global core.sshCommand /usr/bin/ssh"
  }
