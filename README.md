@@ -10,7 +10,6 @@ On the assumption that I may end up self publishing this toolchain targets gener
 
 ## ToDo
 
-* PDF front matter needs to be investigated. Some is present but its a mess
 * Decide on how to link to source code and embed it.
 * Add markdown Lint to the build process
 * Resize images for epub as they do not require the same resolution as printed books
@@ -43,6 +42,12 @@ Currently the title has to be specified in both [metadata.yaml](metadata.yaml) (
 #### Metadata
 
 Metadata for things like title, author etc. are held in [metadata.yaml](metadata.yaml), extra metadata specific to an output format is in an additional metadata file, e.g. [epubmetadata.yaml](epubmetadata.yaml).
+
+#### Front Matter
+
+Front Matter is specified in a similar way to chapters, place one markdown file for each piece of front matter in [FrontMatter](FrontMatter) and specify the order of front matter in [FrontMatterOrder.txt](FrontMatterOrder.txt). The type of Front Matter must be specified using the [epub:type attribute](https://pandoc.org/MANUAL.html#the-epubtype-attribute).
+
+Front Matter would not normally be numbered so use an attribute to suppress numbering, see [Dedication.md](Dedication.md) for an example
 
 #### BookContent
 
