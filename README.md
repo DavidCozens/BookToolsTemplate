@@ -11,8 +11,6 @@ On the assumption that I may end up self publishing this toolchain targets gener
 ## ToDo
 
 * PDF front matter needs to be investigated. Some is present but its a mess
-* PDF KDF request embedded fonts, select fonts and embed - use dejavu
-* Separate epub and ebook for kindle build targets
 * Decide on how to link to source code and embed it.
 * Add markdown Lint to the build process
 * Resize images for epub as they do not require the same resolution as printed books
@@ -54,6 +52,48 @@ The entire content of the book is placed in the folder [BookContent](BookContent
 
 The Chapter order is defined by the order files are listed in [ChapterOrder.txt](ChapterOrder.txt)
 
+#### Fonts
+
+Control of the fonts used in the output of pandoc is complex, it is a complex problem. Pandoc can handle so many formats, on so many platforms. My own end target is KDP publishing for a paperback and an ebook for kindle. On kindles the end user can select the fonts used and so I have only applied minimal effort to selecting the font families used in epub.css. However for the paperback, I am generating a PDF and here I have full control.
+
+The fonts to use are specified by name in <pdfmetadata.yaml>
+
+```yaml
+mainfont: "DejaVu Sans"
+sansfont: "DejaVu Sans"
+monofont: "DejaVu Sans Mono"
+mathfont: "DejaVu Math TeX Gyre"
+```
+
+It took several attempts to get the name of the font correct. Building in the docker container means that the fonts need to be available in the container. So at the terminal prompt in the container in vscode execute
+
+```bash
+fc-list : family | cut -f1 -d"," | sort
+```
+
+At the time of writing this shows
+
+```bash
+DejaVu LGC Sans
+DejaVu LGC Sans
+DejaVu LGC Sans
+DejaVu LGC Sans Mono
+DejaVu LGC Serif
+DejaVu LGC Serif
+DejaVu Math TeX Gyre
+DejaVu Sans
+DejaVu Sans
+DejaVu Sans
+DejaVu Sans Mono
+DejaVu Serif
+DejaVu Serif
+```
+
+The fonts are installed when the docker container was built. I suggest deriving your own container if you wish to add more fonts.
+
+To verify that fonts are actually embedded in the pdf look at the fonts tab in document properties in adobe acrobat.
+
+![Document Properties->Fonts](ReadmeImages/pdf-font-properties.jpg)
 
 ## Using this template
 

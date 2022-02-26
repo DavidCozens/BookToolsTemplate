@@ -1,5 +1,6 @@
-/* This defines styles and classes used in the book */
-body { margin: 5%; text-align: justify; font-size: medium; }
+
+
+body { margin: 5%; font-family: sans-serif; text-align: justify; font-size: medium; }
 code { font-family: monospace; }
 h1 { text-align: left; }
 h2 { text-align: left; }
@@ -7,6 +8,9 @@ h3 { text-align: left; }
 h4 { text-align: left; }
 h5 { text-align: left; }
 h6 { text-align: left; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+}
 /* For title, author, and date on the cover page */
 h1.title { }
 p.author { }

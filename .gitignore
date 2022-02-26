@@ -1,4 +1,9 @@
-#ignore output files
+# generated output files
 **.epub
 **.pdf
+
+# vscode log files 
 **.log
+
+#kindle quality report
+**.kindle-qualityreport.csv

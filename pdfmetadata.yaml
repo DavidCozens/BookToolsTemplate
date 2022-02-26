@@ -6,4 +6,8 @@ subject: "Markdown"
 keywords: [Markdown, Example]
 rights: © 2022 Authors Name,
 lang: "en-GB"
-...
+mainfont: "DejaVu Sans"
+sansfont: "DejaVu Sans"
+monofont: "DejaVu Sans Mono"
+mathfont: "DejaVu Math TeX Gyre"
+---
