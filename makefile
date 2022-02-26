@@ -15,7 +15,7 @@ EPUB_CSS = epub.css
 EPUB_TARGET = $(BOOKNAME).epub
 
 
-PDF_FLAGS = $(COMMON_FLAGS) --pdf-engine=xelatex --top-level-division=chapter -V geometry:"paperwidth=7.5in, paperheight=9.25in, top=0.75in, bottom=0.75in, inner=1.25in, outer=0.75in, twoside"
+PDF_FLAGS = $(COMMON_FLAGS) --pdf-engine=xelatex -f markdown-implicit_figures --top-level-division=chapter -V geometry:"paperwidth=7.5in, paperheight=9.25in, top=0.75in, bottom=0.75in, inner=1.25in, outer=0.75in, twoside"
 PDF_METADATA = pdfmetadata.yaml 
 PDF_YAML = pdf.yaml
 PDF_TARGET = $(BOOKNAME).pdf

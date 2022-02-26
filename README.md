@@ -19,15 +19,10 @@ On the assumption that I may end up self publishing this toolchain targets gener
 ## Bugs
 
 * Heading 5 and 6 have the following paragraph on the same line in pdf.
-* Image position with respect to text is incorrect in pdf
-* Spacing in lists, especially unordered is poor
 * Block quotes, add formatting to PDF and ebook
 * Checklist isn't working in kindle from epub
-* Definition list formatting in epub should be improved
 * Fenced code block is double line spaced in kindle only
-* Highlights are not working at all
-* Strike through is not working
-* Table formatting is inconsistent between formats
+
 
 ## Creating Your Own Content
 

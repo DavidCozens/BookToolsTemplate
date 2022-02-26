@@ -12,8 +12,6 @@ ExtensionDefinitionLists.md
 ExtensionFencedCodeBlocks.md
 ExtensionFootnotes.md
 ExtensionHeadingId.md
-ExtensionHighlight.md
-ExtensionStrikeThrough.md
 ExtensionSubscript.md
 ExtensionSuperscript.md
 ExtensionTables.md
