@@ -41,7 +41,7 @@ $(PDF_TARGET): $(PDF_YAML) $(CHAPTER_ORDER) $(CHAPTERS) $(MAKEFILE_LIST)
 $(PDF_YAML) : $(PDF_METADATA) $(FRONTMATTER_ORDER) $(FRONTMATTER) $(MAKEFILE_LIST)
 	cat $(PDF_METADATA) | sed -e '$$s/---//' > $@
 	echo "include-before: |" >> $@
-	cat $(FRONTMATTER) | sed 's/^/  /' | sed 's/epub:type=[a-z]*//' >> $@
+	awk 'FNR==1{print ""}1' $(FRONTMATTER) | sed 's/^/  /' | sed 's/epub:type=[a-z]*//' >> $@
 	echo --- >> $@
 
 clean:
