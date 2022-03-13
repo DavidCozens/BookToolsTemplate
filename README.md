@@ -4,9 +4,13 @@ Template for creating EPUB books from markdown using [Pandoc](https://pandoc.org
 
 ## Introduction
 
-There is so much information out there when starting to write a book, as well as the content there is a serious issue of which tool chain to use.  For me, as a software engineer I want to use the same text editing and build tools that I use when writing software. For me that is [Visual Studio Code](https://code.visualstudio.com/), [Jenkins](https://www.jenkins.io/) using [Docker](https://hub.docker.com/) to give a consistent build environment locally and on my Continuous Integration server.
+There is so much information out there when starting to write a book, as well as the content there is a serious issue of which tool chain to use.
+For me, as a software engineer I want to use the same text editing and build tools that I use when writing software.
+For me that is [Visual Studio Code](https://code.visualstudio.com/),
+[Jenkins](https://www.jenkins.io/) using [Docker](https://hub.docker.com/) to give a consistent build environment locally and on my Continuous Integration server.
 
-On the assumption that I may end up self publishing this toolchain targets generation of an EPUB, and also [Amazon KDP](https://kdp.amazon.com/) for both Kindle and paperback.  (Or rather will do once I have it all working :laughing:)
+On the assumption that I may end up self publishing this toolchain targets generation of an EPUB, and also [Amazon KDP](https://kdp.amazon.com/) for both Kindle and paperback.
+(Or rather will do once I have it all working :laughing:)
 
 ## ToDo
 
@@ -22,7 +26,6 @@ On the assumption that I may end up self publishing this toolchain targets gener
 * Block quotes, add formatting to PDF and ebook
 * Checklist isn't working in kindle from epub
 * Fenced code block is double line spaced in kindle only
-
 
 ## Creating Your Own Content
 
